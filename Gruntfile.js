@@ -6,10 +6,12 @@ module.exports = function( grunt ) {
         sass: {                             
             dist: {                          
                 options: {                       
-                    style: 'compressed'
+                    style: 'expanded'
                 },
                 files: {
-                    'build/css/all.min.css': 'src/styles/main.scss',
+                    'build/css/all.css': 'src/styles/main.scss',
+                    'build/css/all.min.css': 'src/styles/main.scss'
+
                 }
             }
         },
@@ -52,8 +54,8 @@ module.exports = function( grunt ) {
         watch : {
             dist : {
                 files : [
-                    'build/css/**/*',
-                    'build/js/**/*'
+                    'src/styles/**/*',
+                    'src/scripts/**/*'
                 ],
 
                 tasks : [ 
