@@ -1,7 +1,13 @@
 @import 'normalize';
 @import 'fonts';
+@import 'sidebar';
 
 /* Helper Class */
+
+ *{
+ 	box-sizing: border-box;
+ }
+
 ul{
 	padding: 0;
 }
@@ -12,7 +18,8 @@ li{
 }
 
 .container{
-	width: 999px;
+	width: 980px;
+	height: auto;
 	margin-right: auto;
 	margin-left: auto;
 	clear: both;
@@ -26,12 +33,88 @@ li{
 	float: right;
 }
 
-#header{
-	float: left;
+/* ====== Home ===== */
+.home{
 	width: 100%;
-	background: red;
+	height: 100%;
+	background: url('../img/bg/bg_home.jpg') center top no-repeat;
+	overflow-x: hidden;
+	
+	#contentHome{
+		width: 100%;
+		float: left;
+
+		.relatorioAnual-content{
+			float: left;
+			width: 695px;
+			height: 331px;
+			background: url('../img/bg/img_home_txt.jpg') center top no-repeat;
+			background-size: 100%;
+			position: relative;
+  			top: 91px;
+
+  			.info{
+  				width: 100%;
+  				height: 86px;
+  				background: #fff;
+  				position: absolute;
+  				bottom: -60px;
+  				left: 35px;
+
+  				.pull-left{
+  					float: left;
+					line-height: 50px;
+					margin-left: 75px;
+  				}
+
+  				span{
+  					font-family: 'Conv_ArcherPro-Book';
+  					font-size: 22px;
+  					font-weight: 700;
+  				}
+
+  				.pull-right img{
+  					margin-right: 15px;
+  				}
+  			}
+		}
+	}
+
+	#headerHome{
+		width: 100%;
+		float: left;
+
+		.translateLinks{
+			width: 170px;
+			height: 40px;
+			background: #E81C24;
+			position: relative;
+  			right: 35px;
+
+			a{
+				color: #fff;
+				display: inline-block;
+				font-family: 'Conv_ArcherPro-Thin';
+				font-size: 16px;
+				font-weight: 700;
+				text-align: center;
+				text-decoration: none;
+				position: relative;
+				top: 10px;
+
+				&:hover{
+					text-decoration: underline;
+				}
+
+				&:first-child{
+				  margin: 0 5px;
+				  border-right: 1px solid #fff;
+				  padding: 0 10px;
+				}
+			}
+		}
+	}
 }
 
-#sidebar{
-	float: left;
-}
+
+

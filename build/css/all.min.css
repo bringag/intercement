@@ -472,7 +472,83 @@ th {
   font-weight: normal;
   font-style: normal;
 }
+#sidebar {
+  width: 250px;
+  min-height: 440px;
+  float: left;
+  background: #F0EDE8;
+  position: relative;
+  top: 150px;
+  border-bottom-style: dotted;
+  border-width: 10px;
+}
+#sidebar .mainNav {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  border-left: 2px solid #898684;
+}
+#sidebar .mainNav ul {
+  border-left: 5px solid #231F20;
+  margin: 0 !important;
+}
+#sidebar .mainNav ul li {
+  display: block;
+}
+#sidebar .mainNav ul li a {
+  display: block;
+  width: 100%;
+  background: #F0EDE8;
+  border-top: 1px solid #E4E0DA;
+  font-family: 'Conv_DirectorsGothic230-SBd';
+  font-size: 20px;
+  color: #231F20;
+  text-decoration: none;
+  padding: 2px 0 2px 5px;
+}
+#sidebar .mainNav ul li a:hover {
+  background: #E8E7E0;
+}
+#sidebar .mainNav ul li a:last-child {
+  border-bottom: 1px solid #E4E0DA !important;
+}
+#sidebar .mainNav ul .submenu {
+  display: none;
+  border-left: none !important;
+  margin-left: 25px !important;
+}
+#sidebar .mainNav ul .submenu.active {
+  display: block;
+}
+#sidebar .btnDownload {
+  float: left;
+  margin: 25px 0;
+  width: 100%;
+}
+#sidebar .btnDownload a {
+  width: 90px;
+  height: 25px;
+  color: #231F20;
+  background: #E8E4DF;
+  font-family: 'Conv_DirectorsGothic250-SBd';
+  font-size: 16px;
+  margin: 0 0 0 15px;
+  border-radius: 5px;
+  border-bottom: 5px solid #E0DAD3;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+#sidebar .btnDownload a:focus {
+  position: relative;
+  top: 3px;
+  border-bottom: 2px solid #E0DAD3;
+}
+
 /* Helper Class */
+* {
+  box-sizing: border-box;
+}
+
 ul {
   padding: 0;
 }
@@ -483,7 +559,8 @@ li {
 }
 
 .container {
-  width: 999px;
+  width: 980px;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
   clear: both;
@@ -497,14 +574,76 @@ li {
   float: right;
 }
 
-#header {
-  float: left;
+/* ====== Home ===== */
+.home {
   width: 100%;
-  background: red;
+  height: 100%;
+  background: url("../img/bg/bg_home.jpg") center top no-repeat;
+  overflow-x: hidden;
 }
-
-#sidebar {
+.home #contentHome {
+  width: 100%;
   float: left;
+}
+.home #contentHome .relatorioAnual-content {
+  float: left;
+  width: 695px;
+  height: 331px;
+  background: url("../img/bg/img_home_txt.jpg") center top no-repeat;
+  background-size: 100%;
+  position: relative;
+  top: 91px;
+}
+.home #contentHome .relatorioAnual-content .info {
+  width: 100%;
+  height: 86px;
+  background: #fff;
+  position: absolute;
+  bottom: -60px;
+  left: 35px;
+}
+.home #contentHome .relatorioAnual-content .info .pull-left {
+  float: left;
+  line-height: 50px;
+  margin-left: 75px;
+}
+.home #contentHome .relatorioAnual-content .info span {
+  font-family: 'Conv_ArcherPro-Book';
+  font-size: 22px;
+  font-weight: 700;
+}
+.home #contentHome .relatorioAnual-content .info .pull-right img {
+  margin-right: 15px;
+}
+.home #headerHome {
+  width: 100%;
+  float: left;
+}
+.home #headerHome .translateLinks {
+  width: 170px;
+  height: 40px;
+  background: #E81C24;
+  position: relative;
+  right: 35px;
+}
+.home #headerHome .translateLinks a {
+  color: #fff;
+  display: inline-block;
+  font-family: 'Conv_ArcherPro-Thin';
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  top: 10px;
+}
+.home #headerHome .translateLinks a:hover {
+  text-decoration: underline;
+}
+.home #headerHome .translateLinks a:first-child {
+  margin: 0 5px;
+  border-right: 1px solid #fff;
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=all.min.css.map */

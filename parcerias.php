@@ -6,7 +6,3 @@
 <?php include 'includes/content.php'; ?>
 <!--/ Footer -->
 
-<!-- Footer -->
-<?php include 'includes/footer.php'; ?>
-<!--/ Footer -->
-
